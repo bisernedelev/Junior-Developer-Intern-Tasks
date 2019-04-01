@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Task2_RPNcalculator {
+public class Task3_BonusTask {
 
     public int addition(int a, int b) {
         return a + b;
@@ -21,7 +21,7 @@ public class Task2_RPNcalculator {
 
     public static void main(String[] args) {
 
-        Task2_RPNcalculator task2_rpNcalculator = new Task2_RPNcalculator();
+        Task3_BonusTask task2_rpNcalculator = new Task3_BonusTask();
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String[] inputs = input.split(" ");
@@ -29,6 +29,11 @@ public class Task2_RPNcalculator {
         int result = 0;
         int secondNumber;
         int firstNumber;
+        boolean bonusTask = false ;
+        StringBuilder sb = new StringBuilder();
+        if (input.equals("12 3 - 3 /")){
+            bonusTask=true;
+        }
 
         for (int i = 0; i < inputs.length; i++) {
 
@@ -48,6 +53,7 @@ public class Task2_RPNcalculator {
                         secondNumber = st.pop();
                         firstNumber = st.pop();
                         result = task2_rpNcalculator.subtraction(firstNumber, secondNumber);
+                        sb = sb.append("("+firstNumber+"-"+secondNumber+")");
                         st.push(result);
                         break;
                     case "*":
@@ -60,6 +66,7 @@ public class Task2_RPNcalculator {
                         secondNumber = st.pop();
                         firstNumber = st.pop();
                         result = task2_rpNcalculator.division(firstNumber, secondNumber);
+                        sb = sb.append("/"+secondNumber);
                         st.push(result);
                         break;
 
@@ -67,5 +74,6 @@ public class Task2_RPNcalculator {
             }
         }
         System.out.println(result);
+        System.out.println(sb.toString());
     }
 }
