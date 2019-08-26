@@ -5,6 +5,7 @@ public class Task1_Factorial {
     //Calculate factorial of a given number by the formula   n! = n × (n−1)!
 
     public void calculateFactorial(int n) {
+      
         if (n != 0) { //guarantee that the program will catch condition when the input is "0"
             int a = 1;
             int secondFactorial = 1;
