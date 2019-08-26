@@ -28,7 +28,6 @@ public class Task1_Factorial {
 
     public static void main(String[] args) {
 
-      
         Scanner sc = new Scanner(System.in);
         Task1_Factorial factorialCalculaton = new Task1_Factorial();
         factorialCalculaton.calculateFactorial(sc.nextInt());
