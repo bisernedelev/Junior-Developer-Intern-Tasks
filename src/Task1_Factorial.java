@@ -13,6 +13,7 @@ public class Task1_Factorial {
          
             for (int i = 0; i < n - 1; i++) {
 
+           
                 secondFactorial *= a;
                 a++;
             }
