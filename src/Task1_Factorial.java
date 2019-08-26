@@ -10,6 +10,7 @@ public class Task1_Factorial {
             int secondFactorial = 1;
             int mainResult;
 
+         
             for (int i = 0; i < n - 1; i++) {
 
                 secondFactorial *= a;
