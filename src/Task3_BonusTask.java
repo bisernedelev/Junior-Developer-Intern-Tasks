@@ -11,6 +11,7 @@ public class Task3_BonusTask {
         return a - b;
     }
 
+    
     public int multiplication(int a, int b) {
         return a * b;
     }
