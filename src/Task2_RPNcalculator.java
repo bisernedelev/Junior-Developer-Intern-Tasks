@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
+
 public class Task2_RPNcalculator {
 
     public int addition(int a, int b) {
